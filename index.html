@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel = "icon" type = "image/x-icon" href = "img/favicon-32x32.png">
+  <link rel = "stylesheet" href = "style.css">
+  <title>Tip Calculator</title>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>SPLI
+        <span>TTER</span>
+      </h1>
+    </header>
+    <section class = "card">
+      <section class = "input">
+        <div class = "bill-div">
+          <span>Bill</span>
+          <label class = "wrong-bill">Can't be negative</label>
+        </div>  
+          <input type = "number" dir = "rtl" id = "bill">
+        </div>
+        <h2>Select Tip %</h2>
+        <div class = "grid">
+          <button class="grid-item">5%</button>
+          <button class="grid-item">10%</button>
+          <button class="grid-item" id = "grid15">15%</button>
+          <button class="grid-item">25%</button>
+          <button class="grid-item">50%</button>
+          <input type = "number" placeholder = "Custom" class="grid-item" id = "custom">
+        </div>
+        <div class = "number-div">
+          <h2>Number of People</h2>
+          <label class = "wrong-people">Can't be negative</label>
+        </div>
+        <input type = "number" dir = "rtl" id = "people">
+      </section>
+      <section class = "output">
+        <div class = "container">
+          <div class = "container-2">
+            <h3>Tip Amount</h3>
+            <h4>/ person</h4>
+          </div>
+          <number id = "tip">$0.00</number>
+        </div>
+        <div class = "container">
+          <div class = "container-2">
+            <h3>Total</h3>
+            <h4>/ person</h4>
+          </div>
+          <number id = "total">$0.00</number>
+        </div>
+        <button onClick = "rst()" id = "button" >Reset</button>
+      </section>
+    </section>
+  </main>
+  <script src = "script.js"></script>
+</body>
+</html>
